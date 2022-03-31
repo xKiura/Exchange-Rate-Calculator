@@ -38,3 +38,33 @@ swap.addEventListener('click', () => {
 });
 
 calculate();
+
+// Language setting
+const langEl = document.querySelector('.langWrap');
+const link = document.querySelectorAll('a');
+const titleEl = document.querySelector('.title');
+const descrEl = document.querySelector('.description');
+const langSwapEl = document.querySelector('.langSwap');
+
+link.forEach(eL => {
+  eL.addEventListener('click', () => {
+    langEl.querySelector('.active').classList.remove('active');
+    eL.classList.add('active');
+
+    const attr = eL.getAttribute('language');
+
+    titleEl.textContent = languageData[attr].title;
+    descrEl.textContent = languageData[attr].description;
+  });
+});
+
+const languageData = {
+  "english": {
+    "title": "Exchange Rate Calculator",
+    "description": "Choose the currency and amount to get the exchange rate",
+  },
+  "arabic": {
+    "title": "حاسبة تحويل العملات",
+    "description": "اختار العملة والقيمة المراد تحويلها",
+  },
+};

@@ -22,6 +22,26 @@ h1 {
   color: var(--primary-color);
 }
 
+.langWrap {
+  background: rgb(158, 146, 146);
+  border-radius: 10px;
+}
+
+a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: bold;
+  background: #234b4b;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+a.active {
+  background: #f21313;
+}
+
 p {
   text-align: center;
 }
@@ -31,8 +51,11 @@ p {
   background: var(--primary-color);
   cursor: pointer;
   border-radius: 5px;
-  font-size: 12px;
-  padding: 5px 12px;
+  font-size: 16px;
+  padding: 10px 10px;
+  background-image: url(img/swap.png);
+  background-size: 20px auto, 100%;
+  background-repeat: no-repeat;
 }
 
 .money-img {
