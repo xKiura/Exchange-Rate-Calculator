@@ -110,6 +110,6 @@ button:focus {
 
 @media (max-width: 600px) {
   .currnecy input {
-    width: 200px;
+    width: 150px;
   }
 }
