@@ -64,7 +64,7 @@ p {
 }
 
 .currency {
-  padding: 40px 0;
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,10 +85,11 @@ p {
 }
 
 .currency input {
-  border: 0;
+  border: 1px solid black;
   background: transparent;
   font-size: 30px;
   text-align: right;
+  width: 75%;
 }
 
 .swap-rate-container {
@@ -111,9 +112,6 @@ button:focus {
 
 @media (max-width: 600px) {
   .currnecy input {
-    width: 200px;
-  }
-  .container {
-    width: 50%;
+    width: 150px;
   }
 }
